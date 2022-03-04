@@ -5,10 +5,10 @@ import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
 
+    val quoteLiveData = MutableLiveData("what your giving is what you get")
 
-    val factLiveData = MutableLiveData<String>("This is a Fact")
-
-    fun updateLiveData(){
-        factLiveData.value="This is Another Fact"
+    fun updateQuote(){
+        quoteLiveData.value = "Your Awesome"
     }
+
 }
